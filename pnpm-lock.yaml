@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@twa-dev/sdk':
+        specifier: ^7.8.0
+        version: 7.8.0(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -426,6 +429,14 @@ packages:
     resolution: {integrity: sha512-aJ1EJSuTdGnM6qbVC4B5DSmozPTqIag9fSzXRNNo+humQLG89XpPgdt16Ia56ORD7s+H8Pmyx44uczDQ0yDzpg==}
     cpu: [x64]
     os: [win32]
+
+  '@twa-dev/sdk@7.8.0':
+    resolution: {integrity: sha512-fVnTSqef6UL2cUU/li8z+KEnswBsvVqA1yjNYBKTy4BRcOs6TVjqHMUgVqn9PJJqyCN4Z0QWyA0y0nprYRVvCw==}
+    peerDependencies:
+      react: '>=16.0.0'
+
+  '@twa-dev/types@7.8.0':
+    resolution: {integrity: sha512-nZR1j3Q+YlqLw1WoQXvmi5kdaKSw3C9ChFeycdFKqSnDZb/rqT3qJ3h6wGTyZuxGJNf+JB6bY1pGRrzYfTx3WQ==}
 
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -1539,6 +1550,13 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.20.0':
     optional: true
+
+  '@twa-dev/sdk@7.8.0(react@18.3.1)':
+    dependencies:
+      '@twa-dev/types': 7.8.0
+      react: 18.3.1
+
+  '@twa-dev/types@7.8.0': {}
 
   '@types/babel__core@7.20.5':
     dependencies:
